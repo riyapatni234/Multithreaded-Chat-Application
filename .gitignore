@@ -1,0 +1,33 @@
+# Configuration file with credentials
+config.properties
+
+# Compiled Java files
+*.class
+chatapp/**/*.class
+
+# IDE files
+.idea/
+*.iml
+.vscode/
+*.swp
+*.swo
+
+# Build directories
+target/
+build/
+out/
+
+# Dependencies
+postgresql.jar
+*.jar
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Logs
+*.log
+
+# Temporary files
+*.tmp
+*~

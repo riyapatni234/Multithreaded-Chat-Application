@@ -1,0 +1,127 @@
+:root {
+    -fx-base: #0f172a;
+    -fx-accent: #38bdf8;
+    -fx-text: #e2e8f0;
+    -fx-muted: #94a3b8;
+    -fx-card: #1e293b;
+}
+
+.root {
+    background-color: #0f172a;
+    -fx-background-color: -fx-base;
+    font-family: "Segoe UI", "Helvetica Neue", "Sans-Serif";
+    -fx-font-family: "Segoe UI", "Helvetica Neue", "Sans-Serif";
+    -fx-text-fill: -fx-text;
+}
+
+.label {
+    -fx-text-fill: -fx-text;
+}
+
+.title {
+    font-size: 20px;
+    -fx-font-size: 20px;
+    font-weight: 700;
+    -fx-font-weight: 700;
+}
+
+.text-field,
+.password-field,
+.button,
+.list-view,
+.scroll-pane,
+.text-area {
+    border-radius: 8;
+    -fx-background-radius: 8;
+    -fx-border-radius: 8;
+}
+
+.text-field,
+.password-field {
+    background-color: #1e293b;
+    -fx-background-color: -fx-card;
+    -fx-text-fill: -fx-text;
+    -fx-prompt-text-fill: -fx-muted;
+    border-color: #1e293b;
+    -fx-border-color: #1e293b;
+    padding: 10;
+    -fx-padding: 10;
+}
+
+.button {
+    background-color: #38bdf8;
+    -fx-background-color: -fx-accent;
+    -fx-text-fill: #0b1220;
+    font-weight: 600;
+    -fx-font-weight: 600;
+    padding: 10 16 10 16;
+    -fx-padding: 10 16 10 16;
+}
+
+.button:hover {
+    background-color: #67e8f9;
+    -fx-background-color: #67e8f9;
+}
+
+.list-view {
+    background-color: #1e293b;
+    -fx-background-color: -fx-card;
+    -fx-text-fill: -fx-text;
+    padding: 8;
+    -fx-padding: 8;
+}
+
+.scroll-pane {
+    background: #1e293b;
+    -fx-background: -fx-card;
+    padding: 8;
+    -fx-padding: 8;
+}
+
+.bubble-self {
+    background-color: #38bdf8;
+    -fx-background-color: -fx-accent;
+    padding: 10;
+    -fx-padding: 10;
+    -fx-background-radius: 12 12 0 12;
+    -fx-effect: dropshadow(three-pass-box, rgba(0, 0, 0, 0.2), 5, 0, 0, 2);
+}
+
+.bubble-self .message-content {
+    -fx-text-fill: #0b1220;
+    font-size: 14px;
+    -fx-font-size: 14px;
+}
+
+.bubble-self .meta {
+    -fx-text-fill: rgba(11, 18, 32, 0.7);
+}
+
+.bubble-other {
+    background-color: #1e293b;
+    -fx-background-color: -fx-card;
+    padding: 10;
+    -fx-padding: 10;
+    -fx-background-radius: 12 12 12 0;
+    -fx-effect: dropshadow(three-pass-box, rgba(0, 0, 0, 0.2), 5, 0, 0, 2);
+}
+
+.bubble-other .message-content {
+    -fx-text-fill: -fx-text;
+    font-size: 14px;
+    -fx-font-size: 14px;
+}
+
+.meta {
+    -fx-text-fill: -fx-muted;
+    font-size: 11px;
+    -fx-font-size: 11px;
+}
+
+.status {
+    -fx-text-fill: -fx-muted;
+}
+
+.status.error {
+    -fx-text-fill: #f87171;
+}
